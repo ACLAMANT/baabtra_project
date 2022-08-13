@@ -1,0 +1,350 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="stylesheet" href="{% static 'styles/home_style.css' %}">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <style>
+        .ul1 {
+            padding-left: 0px;
+            background-color: #008B8B;
+            text-align: left;
+        }
+
+        .ul1>li {
+            display: inline-block;
+            padding: 10px 20px;
+
+        }
+
+        .ul1>li:hover {
+            color: white;
+        }
+
+        .ul1>li>a {
+            color: white;
+            text-decoration: none;
+        }
+
+        /* starting grid */
+
+        .grid-container {
+            display: grid;
+            grid-template-columns: 50% 25% 25%;
+        }
+
+        .grid-item {
+            background-color: rgba(255, 255, 255, 0.8);
+            border: 0px solid rgba(0, 0, 0, 0.8);
+            font-size: 30px;
+            text-align: left;
+            color: darkblue;
+        }
+
+        #h6tag {
+            color: black
+        }
+
+        #greenimg {
+            padding: 0%;
+            word-spacing: 0%;
+            margin: 0%;
+        }
+
+        .second {
+
+            display: grid;
+            grid-template-columns: 100%
+        }
+
+        .container {
+            font-family: arial;
+            margin-left: 60px;
+            width: 1250px;
+            height: 70px;
+            outline: 1px black;
+            background-color: darkslategray;
+            color: white;
+            padding: 17px;
+        }
+
+        h4 {
+            /* Center horizontally*/
+            text-align: center;
+        }
+
+        #leftbox {
+            float: left;
+            /* background:Red; */
+            width: 15%;
+            height: 280px;
+            text-align: center;
+
+        }
+
+        #middlebox {
+            float: left;
+            /* background:Green; */
+            width: 30%;
+            height: 280px;
+            margin-left: 280px;
+            text-align: center;
+        }
+
+        #rightbox {
+            float: right;
+            /* background:blue; */
+            width: 25%;
+            height: 280px;
+            text-align: center;
+        }
+
+        .taskbardown {
+
+            font-family: arial;
+            margin-left: 100px;
+            width: 1000px;
+            height: 70px;
+            outline: 1px black;
+            background-color: lightgreen;
+            color: black;
+            padding: 17px;
+
+        }
+
+        #leftboxsecond {
+            float: left;
+            /* background:Red; */
+            width: 25%;
+            height: 45px;
+            text-align: left;
+        }
+
+        #middleboxsecond {
+            float: left;
+            /* background:Green; */
+            width: 35%;
+            height: 45px;
+            margin-left: 90px;
+            text-align: left;
+        }
+
+        #rightboxsecond {
+            float: right;
+            /* background:blue; */
+            width: 25%;
+            height: 45px;
+            text-align: left;
+        }
+    </style>
+</head>
+
+<body>
+
+    <table width="100%">
+
+        <td>
+            <img src="{% static 'images/babtra_icon 1.PNG' %}" alt="" width="250px">
+        </td>
+
+        <td>
+            <div class="d-grid gap-2 d-md-flex justify-content-md-end">
+                <button class="btn btn-primary" type="button"><i class="fa fa-lock"></i> LOGIN </button>
+                <button type="button" class="btn btn-success">REGISTER</button>
+
+            </div>
+        </td>
+
+    </table>
+
+    <ul class="ul1">
+        <li> <a href="/baabtra_page/baabtra_css"> Home </a></li>
+        <li> <a href="/baabtra_page/courses"> Courses </a></li>
+        <li> <a href="/baabtra_page/contactus"> Contact Us </a></li>
+    </ul>
+
+
+    <!-- end of the first part -->
+
+    <div class="grid-container">
+        <div class="grid-item">
+            <h1>SOFTWARE <br>
+                INTERNSHIP
+            </h1>
+            <h6 id="h6tag">
+                PYTHON | PHP | ANGULAR | JAVA
+            </h6>
+
+            <span class="badge text-bg-warning" ><i class="fa fa-phone" style="font-size:24px"></i> 8592 058 444</span> <br>
+
+            <img src="https://thumbs.dreamstime.com/b/african-american-lady-holding-laptop-pointing-finger-standing-studio-shot-excited-recommending-website-over-pink-background-167066089.jpg"
+                alt="" width="200px" id="greenimg">
+            <img src="https://thumbs.dreamstime.com/b/smiling-african-american-girl-holding-personal-computer-searching-information-happy-black-woman-using-laptop-choosing-hotel-room-166399151.jpg"
+                alt="" width="200px" id="greenimg">
+            <img src="https://t4.ftcdn.net/jpg/02/58/15/83/360_F_258158369_AuTmaIGmosGAle1qXs10dprZojYu2nV3.jpg" alt=""
+                width="200px" id="greenimg">
+
+            <button type="button" class="btn btn-lg btn-danger" data-bs-toggle="popover" data-bs-title="Popover title"
+                data-bs-content="And here's some amazing content. It's very engaging. Right?">Join us now!</button>
+        </div>
+
+        <div class="grid-item">
+            <img src="https://s3.envato.com/files/3c53ef5b-f3d4-49e0-82bd-376915ff94b6/inline_image_preview.jpg" alt=""
+                width="320px">
+            <img src="https://store.hp.com/app/assets/images/uploads/prod/best-hp-laptops-for-programming-11539740577350.jpg?impolicy=prdimg&imdensity=1&imwidth=600"
+                alt="" width="320px">
+        </div>
+        <div class="grid-item" id="ladyimage">
+            <img src="https://michiganvirtual.org/wp-content/uploads/2020/01/happy-student-laptop.jpg" alt=""
+                width="320px">
+            <img src="https://htmlcolorcodes.com/assets/images/colors/yellow-orange-color-solid-background-1920x1080.png"
+                alt="" width="320px">
+
+        </div>
+    </div>
+
+    <div class="container">
+        <h4> GETTING A SOFTWARE JOB IS SO EASY WITH OUR INTERNSHIP PROGRAM </h4>
+    </div>
+
+    <!-- end of second part -->
+
+    <br> <br> <br>
+
+    <div id="leftbox">
+        <b>Our office</b>
+        <br> <br>
+        <img src="https://www.fsi.illinois.edu/spaces/img/computer_classroom1%20750x350.jpg" alt="" width="370px">
+
+    </div>
+
+    <div id="middlebox">
+        <b>Best Python Training in Calicut</b> <br> <br>
+        <p> Python is one of the hot programming languages
+            nowadays. Many freshers are learning this software
+            development technology and are getting placed as
+            Python Developer in Software Companies. Baabtra
+            has the highest number of candidates got trained in
+            Python in the last year. We train you to develop a
+            web application using Python with Django
+            framework and MySql database. Python training courses
+            for freshers to make them good programmers through
+            quality training in Python & Django framework in calicut.
+        </p>
+
+    </div>
+
+    <div id="rightbox">
+        <b>Life @ baabtra</b>
+        <br> <br>
+        <iframe width="250" height="250" src="https://www.youtube.com/embed/t0Q2otsqC4I" title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen></iframe>
+
+    </div>
+
+    <!-- end of third part -->
+
+    <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br>
+
+    <div class="taskbardown">
+
+        <div id="leftboxsecond">
+            <b>
+                Baabtra <br>
+                Mentoring Partner
+            </b>
+
+        </div>
+
+        <div id="middleboxsecond">
+            <b>Email: </b> info@baabtra.com <br>
+            <b>Phone: </b> +91-8592 058 444
+        
+        </div>
+
+        <div id="rightboxsecond">
+            <b>Address:</b>
+            5th Floor, CaFIT Square,
+            Kozhikode
+
+
+        </div>
+
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- <div class="grid-item">4</div>
+        <div class="grid-item">5</div>
+        <div class="grid-item">6</div>
+        <div class="grid-item">7</div>
+        <div class="grid-item">8</div>
+        <div class="grid-item">9</div> -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+
+</html>

@@ -1,0 +1,24 @@
+ .ul1 {
+   padding-left: 0px;
+   background-color: #008B8B;
+   text-align: center;
+ }
+
+ .ul1 > li {
+  display: inline-block; 
+  padding: 10px 20px;
+   
+ }
+
+ .ul1 > li:hover {
+   color: white;
+ }
+
+ .ul1 > li > a {
+  color: white;
+  text-decoration: none;
+ }
+
+
+
+ /* end of the first part */

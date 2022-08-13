@@ -1,0 +1,341 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <style>
+        .ul1 {
+            padding-left: 0px;
+            background-color: #008B8B;
+            text-align: left;
+        }
+
+        .ul1>li {
+            display: inline-block;
+            padding: 10px 20px;
+
+        }
+
+        .ul1>li:hover {
+            color: white;
+        }
+
+        .ul1>li>a {
+            color: white;
+            text-decoration: none;
+        }
+
+        .box {
+            float: middle;
+            /* background:Green; */
+            border: solid 1px;
+            border-width: 2px;
+            width: 45%;
+            height: 400px;
+            margin-left: 330px;
+            text-align: center;
+        }
+
+        #form {
+            margin-left: 55px;
+
+
+        }
+
+        #formone {
+
+            margin-left: 193px;
+
+        }
+
+        #formtwo {
+
+            margin-left: 183px;
+
+        }
+
+        #formdouble {
+            margin-left: 87px;
+
+
+        }
+
+        #formthree {
+
+            margin-left: 140px;
+        }
+
+        #formtrible {
+            margin-left: 54px;
+
+        }
+
+        #formfour {
+
+            margin-left: 119px;
+
+        }
+
+        #formforble {
+
+            margin-left: 54px;
+
+        }
+
+        #formfive {
+            margin-left: 193px;
+
+        }
+
+        #formfible {
+            margin-left: 54px;
+
+        }
+
+        #formsix {
+            margin-left: 179px;
+
+
+        }
+
+        #formsixble {
+
+            margin-left: 53px;
+
+        }
+
+        #address {
+            text-align: justify;
+        }
+
+        #button {
+
+            margin-left: 489px;
+
+        }
+
+        .taskbardown {
+
+            font-family: arial;
+            margin-left: 100px;
+            width: 1000px;
+            height: 70px;
+            outline: 1px black;
+            background-color: lightgreen;
+            color: black;
+            padding: 17px;
+
+        }
+
+        #leftboxsecond {
+            float: left;
+            /* background:Red; */
+            width: 25%;
+            height: 45px;
+            text-align: left;
+        }
+
+        #middleboxsecond {
+            float: left;
+            /* background:Green; */
+            width: 35%;
+            height: 45px;
+            margin-left: 90px;
+            text-align: left;
+        }
+
+        #rightboxsecond {
+            float: right;
+            /* background:blue; */
+            width: 25%;
+            height: 45px;
+            text-align: left;
+        }
+    </style>
+</head>
+
+<body>
+
+
+    <table width="100%">
+
+        <td>
+            <img src="{% static 'images/babtra_icon 1.PNG' %}" alt="" width="250px">
+        </td>
+
+        <td>
+            <div class="d-grid gap-2 d-md-flex justify-content-md-end">
+                <button class="btn btn-primary" type="button"><i class="fa fa-lock"></i> LOGIN </button>
+                <button type="button" class="btn btn-success">REGISTER</button>
+
+            </div>
+        </td>
+
+    </table>
+
+    <ul class="ul1">
+        <li> <a href="/baabtra_page/baabtra_css"> Home </a></li>
+        <li> <a href="/baabtra_page/courses"> Courses </a></li>
+        <li> <a href="/baabtra_page/contactus"> Contact Us </a></li>
+    </ul>
+
+    <div class="box" id="middlebox">
+        <b>Contact Us</b> <br> <br>
+
+        <table border="3" cellspacing="1" cellpadding="1">
+            <tr align="left">
+                <th>
+
+                    <form action="/action_page.php">
+                        <label for="fname">Name</label>
+                        <label for="fname" id="formone">:</label>
+                        <input type="text" id="form" name="fname" value="Full Name"
+                            style="height:30px; width: 250px;"><br>
+
+                </th>
+
+            </tr>
+        </table>
+
+        <table border="3" cellspacing="1" cellpadding="1">
+
+            <tr align="left">
+                <th>
+
+                    <form action="/action_page.php">
+                        <label for="fname">Gender</label>
+                        <label for="fname" id="formtwo">:</label>
+                        <input type="radio" id="formdouble" name="fname" value="Male">
+                        Male
+
+                        <input type="radio" id="formdouble" name="fname" value="Female">
+                        Female
+
+                </th>
+
+            </tr>
+        </table>
+
+        <table border="3" cellspacing="1" cellpadding="1">
+
+            <tr align="left">
+                <th>
+
+                    <form action="/action_page.php">
+                        <label for="fname">Date of Birth</label>
+                        <label for="fname" id="formthree">:</label>
+                        <input type="date" id="formtrible" name="fname" style="height:30px; width: 250px;">
+                </th>
+
+            </tr>
+
+        </table>
+
+        <table border="3" cellspacing="1" cellpadding="1">
+
+            <tr align="left">
+                <th>
+
+                    <form action="/action_page.php">
+                        <label for="fname">Mobile Number</label>
+                        <label for="fname" id="formfour">:</label>
+                        <input type="number" id="formforble" name="fname" placeholder="9846 xxx xxx"
+                            style="height:30px; width: 250px;">
+                </th>
+
+            </tr>
+
+        </table>
+
+        <table border="3" cellspacing="1" cellpadding="1">
+
+            <tr align="left">
+                <th>
+
+                    <form action="/action_page.php">
+                        <label for="fname">E Mail</label>
+                        <label for="fname" id="formfive">:</label>
+                        <input type="email" id="formfible" name="fname" placeholder="@gmail.com"
+                            style="height:30px; width: 250px;">
+                </th>
+
+            </tr>
+        </table>
+
+        <table border="3" cellspacing="1" cellpadding="1">
+
+            <tr align="left">
+                <th>
+
+                    <form action="/action_page.php">
+                        <label for="fname">Address</label>
+                        <label for="fname" id="formsix">:</label>
+                        <textarea rows="4" cols="4" name="description" id="formsixble" id="formseven"
+                            style="height:80px; width: 250px;"> </textarea>
+
+                </th>
+
+            </tr>
+
+            <table> <br>
+
+                <tr align="left">
+                    <th>
+
+                        <form action="/action_page.php">
+                            <input type="submit" value="Sumbit" id="button">
+
+
+                    </th>
+
+                </tr>
+
+            </table>
+
+    </div>
+
+    <br> <br>
+
+    <div class="taskbardown">
+
+        <div id="leftboxsecond">
+            <b>
+                Baabtra <br>
+                Mentoring Partner
+            </b>
+
+        </div>
+
+        <div id="middleboxsecond">
+            <b>Email: </b> info@baabtra.com <br>
+            <b>Phone: </b> +91-8592 058 444
+
+        </div>
+
+        <div id="rightboxsecond">
+            <b>Address:</b>
+            5th Floor, CaFIT Square,
+            Kozhikode
+
+
+        </div>
+
+    </div>
+
+
+
+
+
+</body>
+
+</html>
